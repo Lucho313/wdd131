@@ -1,0 +1,16 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+header, footer {
+    text-align: center;
+}
