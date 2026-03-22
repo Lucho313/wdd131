@@ -1,11 +1,17 @@
+:root {
+  --primary: #0033a0;
+  --background: #f5f5f5;
+  --text: #333;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    background: var(--background);
 }
 
 header {
-    background: #0033a0;
+    background: var(--primary);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -13,28 +19,51 @@ header {
 
 main {
     padding: 1rem;
-    
 }
 
+/* Cards */
 section {
     margin-bottom: 1.5rem;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
+    background: white;
     padding: 1rem;
+    border-radius: 8px;
 }
 
 img {
     max-width: 100%;
-    border-radius: 8px;
     display: block;
     margin: 0 auto;
 }
 
 h1, h2, p {
     text-align: center;
+}
+
+footer {
+    background: var(--text);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  
+  .weather h2::after {
+    content: " ⛅";
+  }
+
+
+  .weather img {
+    display: none;
+  }
 }
 

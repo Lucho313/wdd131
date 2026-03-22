@@ -44,10 +44,21 @@
     </section>
 
     <section>
-        <h2>Image</h2>
-        <img src="images/venezuela.webp" alt="Venezuela landscape" width="300">
+        <picture>
+            <h2>Image</h2>
+                <source srcset="images/venezuela-small.webp" media="(max-width: 500px)">
+                <source srcset="images/venezuela-medium.webp" media="(max-width: 900px)">
+                <img src="images/venezuela.webp" alt="Venezuela landscape">
+        </picture>
     </section>
 
+    <section class="weather">
+        <h2>Weather</h2>
+        <img src="images/weather.svg" alt="weather icon" width="50">
+        <p>Temperature: <span id="temp">8</span>°C</p>
+        <p>Wind Speed: <span id="wind">10</span> km/h</p>
+        <p>Wind Chill: <span id="windchill"></span></p>
+    </section>
 </main>
 
 <footer>
