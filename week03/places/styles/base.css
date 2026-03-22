@@ -2,7 +2,9 @@
   --primary: #0033a0;
   --background: #f5f5f5;
   --text: #333;
+  --white: #ffffff;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -10,44 +12,54 @@ body {
     background: var(--background);
 }
 
+/* Header */
 header {
     background: var(--primary);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1rem;
 }
 
+/* Main */
 main {
     padding: 1rem;
 }
 
-/* Cards */
+
 section {
     margin-bottom: 1.5rem;
-    background: white;
+    background: var(--white);
     padding: 1rem;
     border-radius: 8px;
 }
 
+/* Images */
 img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
 }
 
-h1, h2, p {
+/* Typography */
+h1, h2 {
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
+/* Footer */
 footer {
     background: var(--text);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1rem;
 }
 
-
+/* MEDIA QUERY (solo aquí cambios de layout) */
 @media (min-width: 768px) {
+
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -56,14 +68,13 @@ footer {
     margin: 0 auto;
   }
 
-  
+ 
   .weather h2::after {
     content: " ⛅";
   }
 
-
+  /* Oculta SVG en desktop */
   .weather img {
     display: none;
   }
 }
-
