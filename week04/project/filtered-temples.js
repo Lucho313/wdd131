@@ -74,15 +74,6 @@ const temples = [
 const container = document.getElementById("temple-container");
 const buttons = document.querySelectorAll("nav a");
 
-btn.addEventListener("click", (e) => {
-  e.preventDefault(); 
-
-  buttons.forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-
-  filterTemples(btn.dataset.filter);
-});
-
 function displayTemples(list) {
   container.innerHTML = "";
 
@@ -128,7 +119,9 @@ function filterTemples(type) {
 }
 
 buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
     buttons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 
