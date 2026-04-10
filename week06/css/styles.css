@@ -1,0 +1,186 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00e676;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00c853;
+  transform: scale(1.1);
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 25px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TITLES */
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* INPUTS */
+input {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #f1f1f1;
+  color: #000;
+}
+
+/* BUTTON GENERAL */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #00c853, #00e676);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00e676;
+}
+
+/* RESULT */
+#resultado {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* HISTORY LIST */
+ul {
+  margin-top: 15px;
+  list-style: none;
+}
+
+li {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* IMAGE */
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* 🔥 CLEAR HISTORY BUTTON (ARREGLADO) */
+button.clear-btn {
+  width: 150px;
+  height: 110px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  margin: 15px auto;
+  display: block;
+  background: #ff5252;
+  color: white;
+  border-radius: 8px;
+}
+
+button.clear-btn:hover {
+  background: #ff1744;
+  box-shadow: 0 0 10px #ff5252;
+}

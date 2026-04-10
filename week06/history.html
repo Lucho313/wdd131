@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BMI calculation history">
+  <meta name="author" content="Luis Villegas">
+  <title>History</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>History</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About BMI</a>
+    <a href="history.html">History</a>
+  </nav>
+</header>
+
+<main class="card">
+  <h2>Saved Results</h2>
+
+  <ul id="lista"></ul>
+
+<button class="clear-btn" onclick="clearHistory()">Clear History</button>
+</main>
+
+<footer>
+  <p>Data stored in your browser</p>
+  <p>&copy; <span id="year"></span> Luis Villegas</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
